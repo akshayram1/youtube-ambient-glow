@@ -1,0 +1,8 @@
+html.yag-active, html.yag-active body { background: #090a10 !important; }
+#yag-layer { position: fixed; inset: -12%; z-index: 0; pointer-events: none; overflow: hidden; opacity: 0; transition: opacity .35s; }
+#yag-layer .yag-blob { position: absolute; width: 48%; height: 55%; border-radius: 50%; transform: translate(-50%, -50%); }
+#yag-layer canvas { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: fill; }
+html.yag-active ytd-app { position: relative; z-index: 1; background: transparent !important; --yt-spec-base-background: transparent; --yt-spec-general-background-a: transparent; --yt-spec-general-background-b: transparent; }
+html.yag-active ytd-watch-flexy, html.yag-active #columns.ytd-watch-flexy, html.yag-active #primary.ytd-watch-flexy, html.yag-active #secondary.ytd-watch-flexy { background: transparent !important; }
+html.yag-active #cinematics { display: none !important; }
+html.yag-active ytd-masthead { --yt-spec-base-background: #101116; }

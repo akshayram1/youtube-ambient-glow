@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>LumaBloom</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="aurora" aria-hidden="true"></div>
+  <header>
+    <img class="brand-icon" src="icons/icon-128.png" alt="">
+    <div>
+      <h1>LumaBloom</h1>
+      <p>Let every frame light the room.</p>
+    </div>
+  </header>
+
+  <label class="toggle-card" for="enabled">
+    <span><strong>Ambient glow</strong><small>Sync colors with the video</small></span>
+    <span class="switch"><input id="enabled" type="checkbox"><span aria-hidden="true"></span></span>
+  </label>
+
+  <main>
+    <div class="control"><label for="intensity">Intensity <output id="intensity-value"></output></label><input id="intensity" type="range" min="0" max="100"></div>
+    <div class="control"><label for="blur">Spread <output id="blur-value"></output></label><input id="blur" type="range" min="20" max="160"></div>
+    <div class="control"><label for="saturation">Color boost <output id="saturation-value"></output></label><input id="saturation" type="range" min="50" max="250"></div>
+    <div class="control"><label for="speed">Response <output id="speed-value"></output></label><input id="speed" type="range" min="5" max="30"></div>
+    <div class="control"><label for="smoothing">Smoothness <output id="smoothing-value"></output></label><input id="smoothing" type="range" min="0" max="95"></div>
+  </main>
+
+  <button id="reset">Restore defaults</button>
+  <p class="note">Open a YouTube™ video in normal or theater view. Glow rests in fullscreen and hidden tabs.</p>
+  <footer><span aria-hidden="true">●</span> Private by design · Runs locally</footer>
+  <script src="popup.js"></script>
+</body>
+</html>
